@@ -12,9 +12,6 @@ public class Caixa extends FuncionarioEspecial implements AcessoBancoInterno{
 	double getBonus() {
 		return 0;
 	}
-	protected void verifica() {
-		// TODO Auto-generated method stub
-		
-	}
+
 
 }
