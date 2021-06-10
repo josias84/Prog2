@@ -5,7 +5,7 @@ public class TestaContador2 {
 	public static void main(String[] args) {
 		Contador2 c1 = new Contador2();
 		c1.setCont(1);
-		Thread t1 = new Thread();
+		Thread t1 = new Thread(c1);
 		//c1.contar();
 		t1.start();
 		

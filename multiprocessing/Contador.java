@@ -4,13 +4,14 @@ public class Contador {
 	private int cont;
 	
 	public void setCont(int cont) {
-		this.cont = cont;
-		
+		this.cont = cont;		
 	}
+	
+
 
 	public void contar() {
 		for(int i = 0; i < 100; i++) {
-			System.out.println("Thread "+cont+", valor: "+i);
+			System.out.println("Contador "+cont+", valor: "+i);
 		}
 		
 	}
