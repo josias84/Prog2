@@ -9,7 +9,10 @@ import java.sql.SQLException;
 public class TesteJdbc {
 	public static void main(String[] args) {
 		try {
-			Connection con = DriverManager.getConnection("jdbc:mysql://127.0.0.1/test", "root", "root");
+			String url_con = "jdbc:mysql://127.0.0.1/test";
+			String user = "root";
+			String password = "root";
+			Connection con = DriverManager.getConnection(url_con, user, password);
 			System.out.println("Ok, conectado ao Banco");
 			con.close();
 		} catch (SQLException e) {
